@@ -1,74 +1,88 @@
 <template>
-        <section class="hero-section" aria-labelledby="hero-heading">
-                <div class="hero-content">
-                        <h1 id="hero-heading" class="hero-title">Sobre nos</h1>
+   <section
+      class="relative min-h-[90vh] flex items-center justify-start overflow-hidden px-4 sm:px-6 lg:px-8"
+      aria-labelledby="hero-heading"
+   >
+      <div class="relative w-full max-w-7xl mx-auto">
+         <div class="flex flex-col gap-12 lg:gap-20 items-center">
+            <div class="w-full text-center">
+               <h1
+                  id="hero-heading"
+                  class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight"
+                  style="animation-delay: 0.2s"
+                  data-aos="fade-up"
+               >
+                  Sobre
+                  <span
+                     class="bg-gradient-to-r from-[#079272] via-[#0DA790] to-[#2464E8] bg-clip-text text-transparent animate-gradient bg-300"
+                  >
+                     nós
+                  </span>
+               </h1>
+            </div>
 
-                        <p class="hero-description">
-                                Somos uma organização sem fim lucrativos que visa uma revolução no
-                                ambiente educacional atual, incentivando o protagonismo e senso de
-                                comunidade entre os estudantes.
-                        </p>
-                </div>
-        </section>
+            <p
+               class="text-lg sm:text-xl lg:text-2xl text-gray-700 leading-relaxed lg:leading-relaxed w-full text-center"
+               style="animation-delay: 0.3s"
+               data-aos="fade-up"
+            >
+               Somos uma organização sem fins lucrativos que acredita no poder transformador da
+               <span class="font-semibold text-[#079272]">educação colaborativa</span>. Nossa missão
+               é reimaginar o ambiente educacional, cultivando o protagonismo estudantil e
+               fortalecendo o senso de comunidade.
+            </p>
+         </div>
+      </div>
+   </section>
 </template>
 
 <script setup></script>
 
 <style scoped>
-@keyframes fadeInUp {
-        from {
-                opacity: 0;
-                transform: translateY(30px);
-        }
-        to {
-                opacity: 1;
-                transform: translateY(0);
-        }
+@keyframes gradient-shift {
+   0%,
+   100% {
+      background-position: 0% 50%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
 }
 
-@keyframes slideInLeft {
-        from {
-                opacity: 0;
-                transform: translateX(-50px);
-        }
-        to {
-                opacity: 1;
-                transform: translateX(0);
-        }
+.animate-gradient {
+   background-size: 300% 300%;
+   animation: gradient-shift 4s ease infinite;
 }
 
-@keyframes gradientShift {
-        0%,
-        100% {
-                background-position: 0% 50%;
-        }
-        50% {
-                background-position: 100% 50%;
-        }
+.bg-300 {
+   background-size: 300% 300%;
+}
+
+[v-animate] {
+   opacity: 0;
+}
+
+[v-animate].animated {
+   animation: fadeUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .hero-section {
-        @apply min-h-[80vh] flex items-center px-4 md:px-8 lg:px-20;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
-.hero-content {
-        @apply w-full lg:w-screen flex flex-col items-start max-w-2xl;
-        animation: slideInLeft 0.8s ease-out;
+@media (max-width: 1024px) {
+   .hero-section {
+      min-height: 80vh;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+   }
 }
 
-.hero-title {
-        @apply text-4xl sm:text-6xl lg:text-6xl font-bold leading-tight text-gray-900 text-start;
-        animation: fadeInUp 0.8s ease-out 0.1s both;
-}
-
-.gradient-text {
-        @apply bg-gradient-to-r from-[#079272] to-[#2464E8] bg-clip-text text-transparent;
-        background-size: 200% 200%;
-        animation: gradientShift 3s ease infinite;
-}
-
-.hero-description {
-        @apply mt-6 text-base sm:text-xl text-gray-800 leading-relaxed text-start;
-        animation: fadeInUp 0.8s ease-out 0.2s both;
+@media (max-width: 640px) {
+   .hero-section {
+      min-height: 70vh;
+   }
 }
 </style>

@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@tresjs/core": "^5.2.1",
+    "aos": "^2.3.4",
     "axios": "^1.13.2",
     "dotenv": "^17.2.3",
     "pinia": "^3.0.4",
