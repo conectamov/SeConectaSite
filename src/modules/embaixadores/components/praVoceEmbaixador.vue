@@ -68,9 +68,9 @@
         </section>
 
         <section
-                class="relative min-h-[80vh] flex items-center justify-center px-4 md:px-8 lg:px-20 overflow-hidden"
+                class="relative min-h-[100h] flex items-center justify-center px-4 md:px-8 lg:px-20 overflow-hidden mb-[20vh]"
         >
-                <div class="relative w-full max-w-5xl mx-auto text-center">
+                <div class="relative w-full max-w-5xl mx-auto text-center items-center justify-center ">
                         <div
                                 class="relative p-8 md:p-12 lg:p-16 rounded-3xl bg-white/95 backdrop-blur-sm border border-white/40 shadow-2xl"
                                 style="animation: fadeInUp 0.8s ease-out 0.3s both"

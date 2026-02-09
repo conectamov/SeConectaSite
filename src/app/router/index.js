@@ -3,19 +3,20 @@ import { homeRoutes } from '@/modules/home/routes.js'
 import { userRoutes } from '@/modules/users/routes.js'
 import { feedRoutes } from '@/modules/feed/routes.js'
 import { aboutRoutes } from '@/modules/about/routes.js'
-import { embaixadoresRoutes } from '@/modules/embaixadores/routes'
+import { embaixadoresRoutes } from '@/modules/embaixadores/routes.js'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+AOS.init({
+   once: true,
+}) 
+
 const router = createRouter({
-   history: createWebHistory(import.meta.env.BASE_URL),
+   history: createWebHistory(),
+
    routes: [...homeRoutes, ...userRoutes, ...feedRoutes, ...aboutRoutes, ...embaixadoresRoutes],
 })
 
-router.beforeEach((to, from, next) => {
-   AOS.init()
-   next()
-})
 
 export default router

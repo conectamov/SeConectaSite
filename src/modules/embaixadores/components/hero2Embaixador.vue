@@ -1,13 +1,13 @@
 <template>
         <section
-                class="relative min-h-[90vh] flex items-center px-4 md:px-8 lg:px-20 overflow-hidden"
+                class="relative min-h-[100vh] flex items-center justify-center px-4 md:px-8 lg:px-20 overflow-hidden"
                 aria-labelledby="hero-heading"
         >
                 <div
                         class="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20"
                 >
                         <div
-                                class="w-full lg:w-1/2 flex flex-col items-start max-w-2xl"
+                                class="w-full lg:w-[90vh] flex flex-col items-start max-w-2xl"
                                 style="animation: slideInLeft 0.8s ease-out"
                         >
                                 <h1
@@ -34,10 +34,10 @@
                                 </p>
 
                                 <div
-                                        class="flex flex-wrap gap-6 mt-10"
+                                        class="flex w-full flex-wrap gap-6 mt-10"
                                         style="animation: fadeInUp 0.8s ease-out 0.4s both"
                                 >
-                                        <div class="flex items-center gap-3 group cursor-pointer">
+                                        <div class="flex items-center gap-3 group cursor-pointer rounded-2xl bg-white p-5">
                                                 <div
                                                         class="w-8 h-10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
                                                 >
@@ -52,7 +52,7 @@
                                                         </div>
                                                 </div>
                                         </div>
-                                        <div class="flex items-center gap-3 group cursor-pointer">
+                                        <div class="flex items-center gap-3 group cursor-pointer rounded-2xl bg-white p-5">
                                                 <div
                                                         class="w-8 h-10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
                                                 >
@@ -62,7 +62,7 @@
                                                 </div>
                                                 <div>
                                                         <div class="font-semibold text-gray-900">
-                                                                Mentoria Especial
+                                                                Acompanhamento direto
                                                         </div>
                                                         <div class="text-sm text-gray-600">
                                                                 Líderes de impacto
@@ -72,22 +72,22 @@
                                 </div>
 
                                 <div
-                                        class="mt-12 w-full max-w-md"
+                                        class="mt-12 w-full max-w-2xl"
                                         style="animation: fadeInUp 0.8s ease-out 0.5s both"
                                 >
                                         <div class="flex items-center justify-between mb-4">
                                                 <div class="text-sm text-gray-600">
                                                         <span class="font-semibold text-[#079272]"
-                                                                >30</span
+                                                                >20</span
                                                         >
                                                         vagas restantes
                                                 </div>
                                                 <div class="text-sm text-gray-500">
-                                                        Inscrições até 31/03
+                                                        Inscrições até 13/02
                                                 </div>
                                         </div>
 
-                                        <div class="relative group">
+                                        <div class="relative group w-full">
                                                 <button
                                                         class="w-full px-8 py-4 rounded-xl text-white font-bold bg-gradient-to-r from-[#079272] via-[#0BB592] to-[#2464E8] hover:from-[#067a61] hover:via-[#0AA07E] hover:to-[#1d55d6] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-3 focus:outline-none focus:ring-3 focus:ring-[#2464E8]/50 focus:ring-offset-2 hover:shadow-[0_10px_40px_rgba(7,146,114,0.4)] shadow-[0_6px_25px_rgba(7,146,114,0.3)] relative overflow-hidden"
                                                         @click="handleApply"
@@ -208,21 +208,7 @@
                                                 <div class="p-5"></div>
                                         </div>
 
-                                        <div
-                                                class="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-gradient-to-r from-[#079272]/5 to-[#2464E8]/5 border border-white/40 backdrop-blur-sm p-4 shadow-lg"
-                                                style="animation: float 6s ease-in-out infinite"
-                                        >
-                                                <div class="text-center">
-                                                        <div
-                                                                class="text-lg font-bold text-[#079272]"
-                                                        >
-                                                                92%
-                                                        </div>
-                                                        <div class="text-xs text-gray-600">
-                                                                Taxa de sucesso
-                                                        </div>
-                                                </div>
-                                        </div>
+                                        
 
                                         <div
                                                 class="absolute -top-4 -left-4 w-20 h-20 rounded-2xl bg-gradient-to-r from-[#2464E8]/5 to-[#079272]/5 border border-white/40 backdrop-blur-sm p-3 shadow-lg flex items-center justify-center"
@@ -252,8 +238,8 @@ const benefits = ref([
         {
                 icon: 'fas fa-network-wired',
                 color: '#079272',
-                title: 'Networking Premium',
-                description: 'Acesso a líderes e oportunidades',
+                title: 'Rede de estudantes',
+                description: 'acesso direto ao time e outros estudantes lideres',
         },
         {
                 icon: 'fas fa-chart-line',
@@ -265,7 +251,7 @@ const benefits = ref([
                 icon: 'fas fa-microphone',
                 color: '#9C27B0',
                 title: 'Visibilidade',
-                description: 'Destaque na nossa rede nacional',
+                description: 'Reconhecimento na comunidade conecta',
         },
 ])
 

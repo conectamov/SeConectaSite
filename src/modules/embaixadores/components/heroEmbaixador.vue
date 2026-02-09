@@ -81,13 +81,13 @@
                                         <span>Candidate-se Agora</span>
                                 </button>
 
-                                <button
-                                        class="px-8 py-4 rounded-lg font-semibold border-2 border-gray-300 text-gray-700 hover:border-[#079272] hover:text-[#079272] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3 focus:outline-none focus:ring-2 focus:ring-[#079272] focus:ring-offset-2 min-w-[200px]"
-                                        @click="handleLearnMore"
-                                        aria-label="Saiba mais sobre o programa"
+                                <a
+                                        class="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-lg font-medium border-2 border-[#079272] text-[#079272] hover:bg-[#079272] hover:text-white transition-all duration-200"
+                                        href="/sobre"
+                                        aria-label="Explorar mais sobre o Conecta"
                                 >
-                                        <span>Saiba Mais</span>
-                                </button>
+                                        Saiba mais
+                                </a>
                         </div>
                 </div>
         </section>

@@ -12,7 +12,6 @@ import conectaLogo from '../../../assets/conectaLogo.png'
       <div class="socialmedia-icons">
         <i class="fa-brands fa-instagram fa-xl"></i>
         <i class="fa-brands fa-linkedin fa-xl"></i>
-        <i class="fa-brands fa-facebook fa-xl"></i>
         <i class="fa-brands fa-twitter fa-xl"></i>
       </div>
     </div>

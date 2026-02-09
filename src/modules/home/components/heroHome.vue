@@ -56,13 +56,13 @@
                   </span>
                </button>
 
-               <button
+               <a
                   class="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-lg font-medium border-2 border-[#079272] text-[#079272] hover:bg-[#079272] hover:text-white transition-all duration-200"
-                  @click="handleExplore"
+                  href="/sobre"
                   aria-label="Explorar mais sobre o Conecta"
                >
                   Saiba mais
-               </button>
+               </a>
             </div>
          </div>
       </div>

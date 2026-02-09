@@ -111,8 +111,8 @@
                   </ul>
 
                   <!-- CTA Button -->
-                  <button
-                     @click="handleExploreFeed"
+                  <a
+                     href="/feed"
                      class="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-lg text-white font-medium bg-gradient-to-r from-[#079272] to-[#2464E8] hover:opacity-90 active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#2464E8] focus:ring-offset-2 group"
                      aria-label="Explorar feed de oportunidades"
                   >
@@ -120,7 +120,7 @@
                      <span class="transition-transform duration-200 group-hover:translate-x-1"
                         >→</span
                      >
-                  </button>
+                  </a>
                </div>
             </div>
 
@@ -155,7 +155,7 @@
                      >
                         Conexões
                      </span>
-                     que fazem a diferença
+                     que realmente fazem a diferença
                   </h3>
 
                   <p class="text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6">
@@ -221,7 +221,7 @@
                   </ul>
 
                   <!-- CTA Button -->
-                  <button
+                  <a
                      @click="handleConnect"
                      class="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-lg font-medium border-2 border-[#2464E8] text-[#2464E8] hover:bg-[#2464E8] hover:text-white transition-all duration-200 flex items-center justify-center gap-2 group"
                      aria-label="Conectar com outros estudantes"
@@ -230,7 +230,7 @@
                      <span class="transition-transform duration-200 group-hover:translate-x-1"
                         >→</span
                      >
-                  </button>
+                  </a>
                </div>
             </div>
          </div>

@@ -80,9 +80,9 @@ onUnmounted(() => {
                :aria-expanded="isOpen"
                aria-label="Menu de Programas"
             >
-               <span class="nav-link text-gray-700 font-medium">Programas</span>
+               <button class="nav-link text-gray-700 font-semibold hover:text-[#079272] transition-colors duration-300 px-1 py-1">Programas</button>
                <span
-                  class="button-icon text-lg transition-transform duration-300"
+                  class="button-icon text-lg font-800 transition-transform duration-300"
                   :class="{ 'rotate-180': isOpen }"
                >
                   ⌄
@@ -178,9 +178,9 @@ onUnmounted(() => {
                >
                   Sobre
                </a>
-
+               
                <div class="space-y-2">
-                  <div class="text-lg font-medium text-gray-700 py-2">Programas</div>
+                  <div class="text-lg font-medium text-gray-700 hover:text-[#079272] transition-colors py-2">Programas</div>
                   <div class="pl-4 space-y-4">
                      <a
                         href="/mentorias"

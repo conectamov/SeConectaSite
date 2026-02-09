@@ -1,6 +1,6 @@
 <template>
         <section
-                class="min-h-[80vh] flex items-center px-4 md:px-8 lg:px-20"
+                class="min-h-[100vh] flex items-center px-4 md:px-8 lg:px-20"
                 aria-labelledby="hero-heading"
         >
                 <div
