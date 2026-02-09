@@ -2,7 +2,7 @@
         <section
                 class="relative min-h-screen flex flex-col items-center justify-center px-4 md:px-8 lg:px-20 overflow-hidden"
         >
-                <div class="w-full max-w-6xl mx-auto">
+                <div class="w-full max-w-6xl mx-auto ">
                         <div
                                 class="text-center mb-16"
                                 style="animation: fadeInUp 0.8s ease-out 0.2s both"
