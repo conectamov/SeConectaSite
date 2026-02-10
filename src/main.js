@@ -16,4 +16,8 @@ app.use(createPinia())
 app.use(router)
 app.use(AOS)
 
+AOS.init({
+    once: true,
+ }) 
+
 app.mount('#app')

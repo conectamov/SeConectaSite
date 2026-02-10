@@ -23,10 +23,10 @@
                                 transformar iniciativa em impacto real.
                         </p>
 
-                        <button
+                        <a
                                 class="w-full mt-8 px-8 py-3 rounded-lg text-white font-medium bg-gradient-to-r from-[#079272] to-[#2464E8] hover:opacity-90 active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#2464E8] focus:ring-offset-2 hover:shadow-[0_8px_25px_rgba(7,146,114,0.4)] shadow-[0_4px_15px_rgba(7,146,114,0.3)]"
                                 style="animation: fadeInUp 0.8s ease-out 0.3s both"
-                                @click="handleBotAccess"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdDudCi6u5d8HvOd3Nv6R5DJD2RDcqF4ZzRU4y6OuA9aE-nTw/viewform?usp=publish-editor"
                                 aria-label="quero ser embaixador"
                         >
                                 Quero ser embaixador
@@ -36,7 +36,7 @@
                                 >
                                         →
                                 </span>
-                        </button>
+                        </a>
                 </div>
         </section>
 </template>

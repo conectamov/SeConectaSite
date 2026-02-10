@@ -73,13 +73,13 @@
                                 class="flex flex-col sm:flex-row gap-4 mt-12"
                                 style="animation: fadeInUp 0.8s ease-out 0.6s both"
                         >
-                                <button
+                                <a
                                         class="group px-8 py-4 rounded-lg text-white font-semibold bg-gradient-to-r from-[#079272] to-[#2464E8] hover:from-[#067a61] hover:to-[#1d55d6] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3 focus:outline-none focus:ring-2 focus:ring-[#2464E8] focus:ring-offset-2 hover:shadow-[0_8px_30px_rgba(7,146,114,0.4)] shadow-[0_4px_20px_rgba(7,146,114,0.3)] min-w-[200px]"
-                                        @click="handleApply"
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLSdDudCi6u5d8HvOd3Nv6R5DJD2RDcqF4ZzRU4y6OuA9aE-nTw/viewform?usp=publish-editor"
                                         aria-label="Candidate-se para ser embaixador"
                                 >
                                         <span>Candidate-se Agora</span>
-                                </button>
+                                </a>
 
                                 <a
                                         class="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-lg font-medium border-2 border-[#079272] text-[#079272] hover:bg-[#079272] hover:text-white transition-all duration-200"

@@ -1,6 +1,7 @@
 <template>
    <section
       class="min-h-[100vh] flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-12 md:py-0 relative overflow-hidden"
+      data-aos="flip-right"
    >
      <div
          class="hidden md:block absolute right-24 top-16 w-40 h-40 bg-teal-300/40 rounded-full blur-xl"

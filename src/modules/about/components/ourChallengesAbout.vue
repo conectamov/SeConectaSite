@@ -243,9 +243,9 @@
                   class="absolute inset-0 bg-gradient-to-r from-[#079272] to-[#2464E8] rounded-2xl blur-xl opacity-70 group-hover:opacity-90 transition-opacity duration-300 animate-gradient"
                ></div>
 
-               <button
+               <a
                   class="relative w-full px-8 py-6 rounded-2xl text-white font-semibold text-lg bg-gradient-to-r from-[#079272] to-[#2464E8] hover:from-[#0aab8a] hover:to-[#2a76ff] transition-all duration-300 flex items-center justify-center gap-3 focus:outline-none focus:ring-4 focus:ring-[#2464E8]/30 focus:ring-offset-2 transform hover:-translate-y-1 active:scale-98 shadow-xl hover:shadow-2xl group"
-                  @click="handleJoinPlatform"
+                  href="https://chat.whatsapp.com/HisXkEFGq4v5jEBn8hTM3o"
                   aria-label="Junte-se à nossa plataforma"
                >
                   <span class="relative z-10">Faça parte desta rede transformadora</span>
@@ -262,7 +262,7 @@
                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                      />
                   </svg>
-               </button>
+               </a>
             </div>
 
             <p class="text-center text-gray-500 mt-6">
@@ -308,10 +308,6 @@ const pillars = ref([
          'Inspiramos estudantes através de pessoas movidas por propósito e dispostas a transformar suas comunidades com ações concretas.',
    },
 ])
-
-const handleJoinPlatform = () => {
-   console.log('Usuário clicou em "Junte-se à plataforma"')
-}
 
 const vAnimate = {
    mounted(el) {

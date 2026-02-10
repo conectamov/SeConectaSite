@@ -2,6 +2,7 @@
    <section
       class="min-h-[80vh] md:min-h-[90vh] flex items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-12 md:py-0 w-[100vw]"
       aria-labelledby="hero-heading"
+      data-aos="fade-up-right"
    >
       <div class="w-full mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
          <!-- Text Content -->
@@ -42,9 +43,9 @@
                class="w-full mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 sm:align-items-center justify-center lg:justify-start group"
                style="animation: fadeInUp 0.8s ease-out 0.3s both"
             >
-               <button
+               <a
                   class="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-lg text-white font-medium bg-gradient-to-r from-[#079272] to-[#2464E8] hover:opacity-90 active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#2464E8] focus:ring-offset-2 hover:shadow-[0_8px_25px_rgba(7,146,114,0.4)] shadow-[0_4px_15px_rgba(7,146,114,0.3)]"
-                  @click="handleBotAccess"
+                  href="https://wa.me/558599783928"
                   aria-label="Acessar nosso bot de assistência"
                >
                   Acesse nosso bot
@@ -54,7 +55,7 @@
                   >
                      →
                   </span>
-               </button>
+               </a>
 
                <a
                   class="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-lg font-medium border-2 border-[#079272] text-[#079272] hover:bg-[#079272] hover:text-white transition-all duration-200"
@@ -70,14 +71,6 @@
 </template>
 
 <script setup>
-const handleBotAccess = () => {
-   console.log('Bot acessado')
-}
-
-const handleExplore = () => {
-   // Navegar para a seção sobre ou página de informações
-   console.log('Explorar mais')
-}
 </script>
 
 <style scoped>

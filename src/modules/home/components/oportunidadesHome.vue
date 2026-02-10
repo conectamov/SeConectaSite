@@ -1,8 +1,8 @@
 <template>
-   <section class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
+   <section class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20" >
       <div class="max-w-7xl mx-auto">
          <!-- Section Header -->
-         <div class="text-center mb-10 sm:mb-12 md:mb-16">
+         <div class="text-center mb-10 sm:mb-12 md:mb-16" data-aos="fade-up-right">
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
                Como o Conecta te ajuda
             </h2>
@@ -12,7 +12,7 @@
          </div>
 
          <!-- Cards Grid -->
-         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
+         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 "  data-aos="flip-up">
             <!-- Oportunidades Card -->
             <div
                class="bg-gradient-to-br from-white to-gray-50 rounded-2xl sm:rounded-3xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300"
@@ -222,7 +222,7 @@
 
                   <!-- CTA Button -->
                   <a
-                     @click="handleConnect"
+                     href="https://wa.me/558599783928"
                      class="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-lg font-medium border-2 border-[#2464E8] text-[#2464E8] hover:bg-[#2464E8] hover:text-white transition-all duration-200 flex items-center justify-center gap-2 group"
                      aria-label="Conectar com outros estudantes"
                   >

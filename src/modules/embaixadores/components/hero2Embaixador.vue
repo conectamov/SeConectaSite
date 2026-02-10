@@ -88,9 +88,9 @@
                                         </div>
 
                                         <div class="relative group w-full">
-                                                <button
+                                                <a
                                                         class="w-full px-8 py-4 rounded-xl text-white font-bold bg-gradient-to-r from-[#079272] via-[#0BB592] to-[#2464E8] hover:from-[#067a61] hover:via-[#0AA07E] hover:to-[#1d55d6] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-3 focus:outline-none focus:ring-3 focus:ring-[#2464E8]/50 focus:ring-offset-2 hover:shadow-[0_10px_40px_rgba(7,146,114,0.4)] shadow-[0_6px_25px_rgba(7,146,114,0.3)] relative overflow-hidden"
-                                                        @click="handleApply"
+                                                        href="https://docs.google.com/forms/d/e/1FAIpQLSdDudCi6u5d8HvOd3Nv6R5DJD2RDcqF4ZzRU4y6OuA9aE-nTw/viewform?usp=publish-editor"
                                                         aria-label="Quero ser embaixador"
                                                 >
                                                         <span class="relative z-10"
@@ -105,7 +105,7 @@
                                                         <div
                                                                 class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
                                                         ></div>
-                                                </button>
+                                                </a>
                                                 <p class="text-center text-sm text-gray-600 mt-4">
                                                         Processo seletivo com
                                                         <span class="font-semibold"

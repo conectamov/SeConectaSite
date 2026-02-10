@@ -100,17 +100,13 @@ onUnmounted(() => {
                ></div>
 
                <div class="p-4 space-y-2">
-                  <a href="/mentorias" class="dropdown-item group" @click="closeDropdown">
-                     <span class="item-text">Mentorias</span>
-                  </a>
-
                   <a href="/embaixadores" class="dropdown-item group" @click="closeDropdown">
                      <span class="item-text">Embaixadores</span>
                   </a>
 
-                  <a href="/comunidades" class="dropdown-item group" @click="closeDropdown">
-                     <span class="item-text">Comunidades</span>
-                  </a>
+                  <div class="dropdown-item group">
+                     <span class="">Em breve mais programas!</span>
+                  </div>
                </div>
             </div>
          </div>
