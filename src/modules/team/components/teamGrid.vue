@@ -32,7 +32,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import TeamMember from './TeamMember.vue'
+import TeamMember from './teamMember.vue'
 
 const teamMembers = ref([
   {

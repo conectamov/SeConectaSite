@@ -7,6 +7,7 @@
       class="h-full bg-white rounded-2xl p-6 border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden"
     >
       <div
+      
         class="absolute top-0 right-0 w-32 h-32 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300"
         :class="member.avatarColor"
       ></div>
