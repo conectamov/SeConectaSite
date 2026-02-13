@@ -67,16 +67,6 @@
             </div>
          </div>
       </div>
-
-      <!-- Scroll Indicator -->
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-         <div class="flex flex-col items-center gap-2 text-gray-600">
-            <span class="text-sm">Role para saber mais</span>
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-         </div>
-      </div>
    </section>
 </template>
 
@@ -86,7 +76,7 @@
 <style scoped>
 .hero {
    height: 100svh;
-   height: 85vh; /* fallback */
+   height: 95vh; /* fallback */
    position: relative;
 }
 
