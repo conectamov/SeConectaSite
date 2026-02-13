@@ -26,10 +26,8 @@
                style="animation-delay: 0.3s"
                data-aos="fade-up"
             >
-               Somos uma organização sem fins lucrativos que acredita no poder transformador da
-               <span class="font-semibold text-[#079272]">educação colaborativa</span>. Nossa missão
-               é reimaginar o ambiente educacional, cultivando o protagonismo estudantil e
-               fortalecendo o senso de comunidade.
+               O <span class="font-semibold text-[#079272]">seConecta</span> é uma EdTech sem fins lucrativos com o objetivo de 
+               tornar iniciativas mais acessíveis através, atuando como a ponte entre estudantes e oportunidades. 
             </p>
          </div>
       </div>

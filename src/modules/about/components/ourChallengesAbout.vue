@@ -293,7 +293,7 @@ const pillars = ref([
       number: '01',
       title: 'Crescimento Em Rede',
       description:
-         'Criamos a maior rede social de impacto do Brasil, conectando estudantes, mentores e oportunidades em uma plataforma focada em crescimento coletivo.',
+         'Queremos criar a maior rede social de impacto do Brasil, conectando estudantes, mentores e oportunidades em uma plataforma simples com foco em crescimento coletivo.',
    },
    {
       number: '02',

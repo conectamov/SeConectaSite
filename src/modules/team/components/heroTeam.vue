@@ -29,7 +29,7 @@
           style="animation-delay: 0.3s"
           data-aos="fade-up"
         >
-          Somos um grupo de apaixonados por tecnologia e educação, unidos para criar uma plataforma que transforma vidas através da conexão entre talentos e oportunidades.
+          Nossa equipe é formada por jovens cuja trajetória foi transformada ao encontrar as oportunidades certas. Trabalhamos juntos para criar uma plataforma que oferece recursos, oportunidades e suporte para estudantes em todo o Brasil.
         </p>
 
         <div class="flex flex-wrap gap-4 justify-center mt-4" data-aos="fade-up" style="animation-delay: 0.4s">
@@ -40,7 +40,7 @@
             Design & Mídias
           </span>
           <span class="px-4 py-2 bg-[#2464E8]/10 text-[#2464E8] rounded-full text-sm font-medium">
-            Beta Testers
+            Embaixadores
           </span>
         </div>
       </div>
