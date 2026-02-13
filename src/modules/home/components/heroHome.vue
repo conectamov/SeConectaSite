@@ -1,13 +1,13 @@
 <template>
    <section
-      class="hero relative overflow-hidden h-[100svh] flex items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-0 w-full"
+      class="min-h-[80vh] md:min-h-[90vh] flex items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-12 md:py-0 w-[100vw]"
       aria-labelledby="hero-heading"
       data-aos="fade-up-right"
    >
-      <div class="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-12 relative z-10">
+      <div class="w-full mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
          <!-- Text Content -->
          <div
-            class="w-full lg:w-1/2 px-4 sm:px-6 md:px-8 lg:px-0 flex flex-col items-start"
+            class="w-screen lg:w-1/2 -mx-4 lg:mx-0 px-4 sm:px-6 md:px-8 lg:px-0 flex flex-col items-start"
             style="animation: slideInLeft 0.8s ease-out"
          >
             <h1
@@ -67,19 +67,6 @@
             </div>
          </div>
       </div>
-
-      <!-- Scroll Indicator -->
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-         <div class="flex flex-col items-center gap-2 text-gray-600">
-            <span class="text-sm">Role para saber mais</span>
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-         </div>
-      </div>
-
-      <!-- Gradient fade at bottom for smooth transition -->
-      <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none z-0"></div>
    </section>
 </template>
 
@@ -87,12 +74,6 @@
 </script>
 
 <style scoped>
-.hero {
-   height: 100svh;
-   height: 80vh; /* fallback */
-   position: relative;
-}
-
 @keyframes fadeInUp {
    from {
       opacity: 0;
@@ -115,6 +96,15 @@
    }
 }
 
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
 @keyframes gradientShift {
    0%,
    100% {
@@ -127,7 +117,7 @@
 
 /* Mobile optimizations */
 @media (max-width: 640px) {
-   .hero {
+   section {
       min-height: 90vh;
    }
 
