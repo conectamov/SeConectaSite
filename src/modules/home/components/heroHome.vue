@@ -1,13 +1,13 @@
 <template>
    <section
-      class="hero relative overflow-hidden h-[100svh] flex items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-0 w-full"
+      class="min-h-[80vh] md:min-h-[90vh] flex items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-12 md:py-0 w-[100vw]"
       aria-labelledby="hero-heading"
       data-aos="fade-up-right"
    >
-      <div class="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-12 relative z-10">
+      <div class="w-full mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
          <!-- Text Content -->
          <div
-            class="w-full lg:w-1/2 px-4 sm:px-6 md:px-8 lg:px-0 flex flex-col items-start"
+            class="w-screen lg:w-1/2 -mx-4 lg:mx-0 px-4 sm:px-6 md:px-8 lg:px-0 flex flex-col items-start"
             style="animation: slideInLeft 0.8s ease-out"
          >
             <h1
@@ -72,6 +72,8 @@
 
 <script setup>
 </script>
+
+<style scoped>
 
 <style scoped>
 .hero {
