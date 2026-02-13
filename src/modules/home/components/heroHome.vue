@@ -86,7 +86,7 @@
 <style scoped>
 .hero {
    height: 100svh;
-   height: 100vh; /* fallback */
+   height: 85vh; /* fallback */
    position: relative;
 }
 
