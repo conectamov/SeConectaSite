@@ -1,9 +1,10 @@
 <template>
    <section
-      class="min-h-[100vh] flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-12 md:py-0 relative overflow-hidden"
+      class="flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-16 md:py-24 relative overflow-hidden"
       data-aos="flip-right"
    >
-     <div
+      <!-- Decorative blurs -->
+      <div
          class="hidden md:block absolute right-24 top-16 w-40 h-40 bg-teal-300/40 rounded-full blur-xl"
       ></div>
       <div
@@ -13,6 +14,7 @@
       <div
          class="w-full max-w-6xl rounded-2xl bg-white/35 backdrop-blur-xl border border-white/40 shadow-xl overflow-hidden"
       >
+         <!-- Tabs Navigation -->
          <div class="flex overflow-x-auto px-3 pt-4 pb-2 gap-1 sm:gap-2">
             <button
                v-for="tab in tabs"
@@ -29,7 +31,8 @@
             </button>
          </div>
 
-        <div
+         <!-- Browser Address Bar (Desktop) -->
+         <div
             class="hidden md:flex mt-2 mx-4 rounded-md bg-white/60 px-3 py-2 text-sm text-gray-600 items-center gap-2"
          >
             <span class="text-gray-400">&lt;</span>
@@ -37,6 +40,7 @@
             <span class="ml-2 text-gray-700 truncate"> www.conecta.com/{{ activeTab }} </span>
          </div>
 
+         <!-- Content Area -->
          <div class="p-4 sm:p-6 md:p-8 min-h-[300px] sm:min-h-[350px]">
             <Transition name="fade-slide" mode="out-in">
                <div :key="activeTab" class="text-gray-800 leading-relaxed">
@@ -51,7 +55,8 @@
             </Transition>
          </div>
 
-       <div class="md:hidden flex justify-center pb-4">
+         <!-- Mobile Pagination Dots -->
+         <div class="md:hidden flex justify-center pb-4">
             <div class="flex space-x-2">
                <div
                   v-for="tab in tabs"
@@ -126,7 +131,6 @@ const content = {
    transform: translateY(-8px);
 }
 
-
 .hide-scrollbar {
    -ms-overflow-style: none;
    scrollbar-width: none; 
@@ -135,7 +139,6 @@ const content = {
 .hide-scrollbar::-webkit-scrollbar {
    display: none; 
 }
-
 
 @media (max-width: 640px) {
    .rounded-2xl {
