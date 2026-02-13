@@ -35,9 +35,7 @@
                class="mt-4 sm:mt-6 text-base sm:text-lg text-gray-800 leading-relaxed text-center lg:text-left"
                style="animation: fadeInUp 0.8s ease-out 0.2s both"
             >
-               Uma rede de crescimento feita por estudantes, para estudantes. Juntos, criamos pontes
-               entre potencial e oportunidade.
-            </p>
+            Veja estudantes com interesses parecidos, acompanhe o que eles estudam e receba conteúdos e oportunidades relacionadas ao longo do caminho.            </p>
 
             <div
                class="w-full mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 sm:align-items-center justify-center lg:justify-start group"
@@ -67,6 +65,18 @@
             </div>
          </div>
       </div>
+
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+         <div class="flex flex-col items-center gap-2 text-gray-600">
+            <span class="text-sm">Role para saber mais</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+         </div>
+      </div>
+
+
+
    </section>
 </template>
 
