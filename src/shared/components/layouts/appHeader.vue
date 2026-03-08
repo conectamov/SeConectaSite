@@ -152,7 +152,7 @@ const isManager = computed(() =>
       <!-- ── Logo ──────────────────────────────────────────────────────────── -->
       <button
         class="text-[1.6rem] font-bold tracking-[-0.03em] text-black bg-transparent border-none cursor-pointer flex-shrink-0 p-0"
-        @click="go('feed')"
+        @click="go('')"
       >
         <span class="bg-gradient-to-r from-[#079272] to-[#2464E8] bg-clip-text text-transparent">Se</span>Conecta<span class="text-[#079272]">.</span>
       </button>

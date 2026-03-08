@@ -141,7 +141,7 @@ function toggle(i) { active.value = active.value === i ? null : i }
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#f7f5f0] flex gap-5 px-4 md:px-8 py-6 max-w-[1400px] mx-auto">
+  <div class="min-h-screen  flex gap-5 px-4 md:px-8 py-6 max-w-[1400px] mx-auto">
 
     <!-- Guia Markdown -->
     <aside class="hidden xl:flex flex-col w-52 flex-shrink-0">

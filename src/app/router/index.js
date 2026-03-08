@@ -37,12 +37,8 @@ const router = createRouter({
 })
 
 
-router.beforeEach(async (to, from, next) => {
-  const { isAuthenticated, authLoading, restoreSession } = useAuth()
-
-  if (authLoading.value) {
-    await restoreSession()
-  }
+router.beforeEach((to, from, next) => {
+  const { isAuthenticated } = useAuth()
 
   if (to.meta.requiresAuth && !isAuthenticated.value) {
     return next({ name: 'login', query: { redirect: to.fullPath } })
@@ -55,8 +51,5 @@ router.beforeEach(async (to, from, next) => {
   next()
 })
 
-router.afterEach((to) => {
-  document.title = to.meta?.title || 'Conecta'
-})
 
 export default router

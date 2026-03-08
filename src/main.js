@@ -9,6 +9,10 @@ import router from './app/router'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { useAuth } from './composables/useAuth'
+
+const { restoreSession } = useAuth()
+await restoreSession()
 
 const app = createApp(App)
 
@@ -18,6 +22,7 @@ app.use(AOS)
 
 AOS.init({
     once: true,
- }) 
+ })
 
 app.mount('#app')
+

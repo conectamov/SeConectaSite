@@ -1,11 +1,11 @@
 <script setup>
-import heroTeam from '../components/heroTeam.vue'
-import teamGrid from '../components/teamGrid.vue'
+import HeroTeam    from '../components/heroTeam.vue'
+import TeamGrid    from '../components/teamGrid.vue'
 </script>
 
 <template>
-  <section>
-    <heroTeam />
-    <teamGrid />
-  </section>
+  <div class="min-h-screen bg-[#f7f5f0]">
+    <HeroTeam />
+    <TeamGrid />
+  </div>
 </template>
