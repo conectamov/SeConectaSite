@@ -27,24 +27,7 @@
 
       <!-- Título reduzido -->
       <h1 id="hero-heading" class="font-extrabold text-black mb-4 leading-[1.1] tracking-[-0.03em] text-[clamp(2.5rem,7vw,5rem)]">
-        <span
-          data-aos="fade-up"
-          data-aos-duration="700"
-          data-aos-delay="50"
-          class="block"
-        >Conecte-se</span>
-        <span
-          data-aos="fade-up"
-          data-aos-duration="700"
-          data-aos-delay="150"
-          class="block text-black"
-        >com quem</span>
-        <span
-          data-aos="fade-up"
-          data-aos-duration="700"
-          data-aos-delay="250"
-          class="block"
-        ><em class="not-italic bg-gradient-to-r from-[#079272] to-[#2464E8] bg-clip-text text-transparent">constrói</em> o futuro.</span>
+        Avalie os posts pendente
       </h1>
 
       <!-- Descrição mais compacta -->
@@ -54,26 +37,8 @@
         data-aos-delay="350"
         class="font-medium text-[#079272] max-w-[440px] leading-relaxed mb-8 text-base"
       >
-        Histórias reais de pessoas que estão transformando tecnologia, design e cultura — direto para você.
+        Obrigado por ser a pessoa responsavel por moderar nossa comunidade.
       </p>
-
-      <!-- CTA mais compacto -->
-      <div
-        data-aos="fade-up"
-        data-aos-duration="700"
-        data-aos-delay="450"
-        class="flex items-center gap-4"
-      >
-        <button class="flex items-center gap-2 text-sm font-semibold px-6 py-3 bg-white text-[#0d0d0d] rounded-xl border-none cursor-pointer transition-all duration-250 hover:bg-[#079272] hover:text-white hover:-translate-y-0.5">
-          Explorar o feed
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-          </svg>
-        </button>
-        <button class="text-sm px-6 sm:px-6 py-3  font-light rounded-lg font-light border-2 border-[#079272] text-[#079272] hover:bg-[#079272] hover:text-white transition-all duration-200">
-          Saiba mais
-        </button>
-      </div>
     </div>
   </section>
 </template>

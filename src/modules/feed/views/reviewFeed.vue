@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import Hero     from '../components/heroFeed.vue'
+import Hero     from '../components/heroReviewFeed.vue'
 import PostCard from '../components/postFeed.vue'
 import { useAxios } from '@/composables/useAxios'
 import { useAuth  } from '@/composables/useAuth'
@@ -27,7 +27,7 @@ const LIMIT       = 8
 
 const feedMode = ref('general') // 'general' | 'personalized'
 
-// FIX: hasMore calculado com count real da API em vez de data.length === LIMIT
+
 const hasMore = computed(() => posts.value.length < totalCount.value)
 
 const hasInterests = computed(() => (currentUser.value?.interests?.length ?? 0) > 0)
@@ -41,14 +41,10 @@ async function fetchPosts(reset = true) {
 
   try {
     let res
-    if (feedMode.value === 'personalized' && isAuthenticated.value) {
-      res = await get('/posts/feed', { params: { page: page.value, limit: LIMIT } })
-    } else {
-      const params = { page: page.value, limit: LIMIT }
-      if (searchQuery.value.trim()) params.search = searchQuery.value.trim()
-      if (activeTag.value)          params.tag    = activeTag.value
-      res = await get('/posts/', { params })
-    }
+    const params = { page: page.value, limit: LIMIT }
+    if (searchQuery.value.trim()) params.search = searchQuery.value.trim()
+    if (activeTag.value)          params.tag    = activeTag.value
+    res = await get('/posts/pending', { params })
 
     const data  = res.data.data  ?? []
     const count = res.data.count ?? 0

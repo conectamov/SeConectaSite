@@ -16,3 +16,8 @@ button {
         position: relative;
         display: inline-block;
 }
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

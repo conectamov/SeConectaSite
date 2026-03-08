@@ -1,9 +1,9 @@
 <script setup>
-import conectaLogo from '../../../assets/conectaLogo.png'
+
 </script>
 
 <template>
-  <footer class="footer">
+  <footer v-if="$route.path !== '/login'" class="footer">
     <div class="footer-main">
       <p class="footer-description">
         Uma rede de crescimento feita por estudantes, para estudantes. Juntos, criamos pontes entre
