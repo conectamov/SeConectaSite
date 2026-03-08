@@ -1,8 +1,7 @@
 import { ref, computed } from 'vue'
 import axios from 'axios'
 
-export const BASE_URL = 'http://localhost:8000'
-
+export const BASE_URL = '/api/v1'
 const TOKEN_KEY = 'conecta_token'
 const TOKEN_EXPIRY_KEY = 'conecta_token_expiry'
 const USER_KEY = 'conecta_user'
