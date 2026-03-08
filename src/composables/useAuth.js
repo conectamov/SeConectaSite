@@ -1,6 +1,7 @@
 import { ref, computed } from 'vue'
 import axios from 'axios'
-import { BASE_URL } from './useAuth'
+
+export const BASE_URL = 'http://localhost:8000'
 
 const TOKEN_KEY = 'conecta_token'
 const TOKEN_EXPIRY_KEY = 'conecta_token_expiry'
