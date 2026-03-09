@@ -46,11 +46,11 @@
             <a
                class="group px-8 py-4 rounded-xl text-white font-semibold text-lg bg-orange-600 hover:bg-orange-700 hover:scale-105 active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-3 focus:outline-none focus:ring-4 focus:ring-orange-300 hover:shadow-[0_12px_35px_rgba(234,88,12,0.5)] shadow-[0_6px_20px_rgba(234,88,12,0.35)]"
                href="https://wa.me/558599783928?text=Olá!%20Quero%20participar%20do%20beta%20do%20Conecta"
-               aria-label="Testar no WhatsApp"
+               aria-label="Fale com o Nexo"
                target="_blank"
                rel="noopener noreferrer"
             >
-               <span>Testar no WhatsApp</span>
+               <span>Teste no WhatsApp</span>
                <svg
                   class="w-6 h-6 transition-transform duration-300 group-hover:scale-110"
                   fill="currentColor"

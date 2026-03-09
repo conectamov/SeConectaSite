@@ -69,6 +69,6 @@
 const stats = [
   { value: '3',    label: 'Diretores',    icon: '◈', color: '#2464E8' },
   { value: '6',  label: 'Embaixadores', icon: '◎', color: '#079272' },
-  { value: '44', label: 'Beta Testers', icon: '⚡', color: '#F59E0B' },
+  { value: '50', label: 'Beta Testers', icon: '⚡', color: '#F59E0B' },
 ]
 </script>

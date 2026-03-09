@@ -1,6 +1,6 @@
 <template>
    <section
-      class="relative min-h-[90vh] flex items-center justify-start overflow-hidden px-4 sm:px-6 lg:px-8"
+      class="relative min-h-[55vh] flex items-center justify-start overflow-hidden px-4 sm:px-6 lg:px-8"
       aria-labelledby="hero-heading"
    >
       <div class="relative w-full max-w-7xl mx-auto">
@@ -26,9 +26,8 @@
                style="animation-delay: 0.3s"
                data-aos="fade-up"
             >
-               O <span class="font-semibold text-[#079272]">seConecta</span> é uma EdTech sem fins lucrativos com o objetivo de 
-               tornar iniciativas mais acessíveis através, atuando como a ponte entre estudantes e oportunidades. 
-            </p>
+               O <span class="font-semibold text-[#079272]">seConecta</span> é um ecossistema ed-tech que conecta estudantes a oportunidades e mobiliza uma rede de líderes estudantis que geram impacto.
+            </p>  
          </div>
       </div>
    </section>

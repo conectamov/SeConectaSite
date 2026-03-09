@@ -4,7 +4,7 @@
          <!-- Section Header -->
          <div class="text-center mb-10 sm:mb-12 md:mb-16" data-aos="fade-up-right">
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
-               Como o Conecta te ajuda
+               Como o seConecta te ajuda
             </h2>
             <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
                Duas formas principais de transformar sua jornada educacional
@@ -42,15 +42,14 @@
                      <span
                         class="bg-gradient-to-r from-[#079272] to-[#2464E8] bg-clip-text text-transparent"
                      >
-                        Oportunidades
+                        Conecte-se
                      </span>
-                     que você não pode perder
+                     com as melhores oportunidades 
                   </h3>
 
                   <p class="text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6">
-                     Já se sentiu perdido por não encontrar boas oportunidades? Sabemos como é
-                     difícil descobrir iniciativas, programas e caminhos confiáveis em meio a tanta
-                     informação.
+                     Acesse nosso feed e se inscreva na nossa newsletter para receber atualizações escritas
+                     diariamente pelos nossos embaixadores.
                   </p>
 
                   <ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
@@ -69,7 +68,7 @@
                            ></path>
                         </svg>
                         <span class="text-gray-700 text-sm sm:text-base"
-                           >Feed com oportunidades selecionadas e curadas</span
+                           >Feed com oportunidades personalizadas para você</span
                         >
                      </li>
                      <li class="flex items-start">
@@ -87,7 +86,7 @@
                            ></path>
                         </svg>
                         <span class="text-gray-700 text-sm sm:text-base"
-                           >Histórias reais de estudantes inspiradores</span
+                           >Posts com histórias, entrevistas e oportunidades inspiradoras</span
                         >
                      </li>
                      <li class="flex items-start">
@@ -153,14 +152,14 @@
                      <span
                         class="bg-gradient-to-r from-[#079272] to-[#2464E8] bg-clip-text text-transparent"
                      >
-                        Conexões
+                        Descubra
                      </span>
-                     que realmente fazem a diferença
+                     estudantes parecidos com você
                   </h3>
 
                   <p class="text-gray-600 text-sm sm:text-base md:text-lg mb-4 sm:mb-6">
-                     Já sentiu que não conhecia pessoas com interesses parecidos com os seus? Muitos
-                     estudantes têm objetivos semelhantes, mas nunca se encontram.
+                     Use nosso sistema de "matching" para encontrar estudantes parecidos com você ou com algum interesse específico.
+
                   </p>
 
                   <ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
@@ -215,7 +214,7 @@
                            ></path>
                         </svg>
                         <span class="text-gray-700 text-sm sm:text-base"
-                           >Conexões genuínas para trocas significativas</span
+                           >IA interativa e divertida </span
                         >
                      </li>
                   </ul>

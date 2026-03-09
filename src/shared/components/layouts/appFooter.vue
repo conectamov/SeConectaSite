@@ -16,16 +16,15 @@
       </div>
     </div>
   </footer>
-  <p class="copyright">Conecta © 2025 - Todos os direitos reservados.</p>
+  <p class="copyright"> seConecta © 2026 - Todos os direitos reservados.</p>
 </template>
 
 <style scoped>
 .footer {
-  @apply z-50 bg-gradient-to-r from-[#60b6c1] to-[#36ad90] text-white px-8 md:px-16 lg:px-20 py-12 relative flex flex-col items-center;
+  @apply z-50 bg-gradient-to-r from-[#60b6c1] to-[#36ad90] text-white px-8 md:px-16 lg:px-20 py-6 relative flex flex-col items-center;
 }
-
 .footer-main {
-  @apply mb-20 w-[100%] flex flex-col items-center justify-center;
+  @apply mb-4 w-[100%] flex flex-col items-center justify-center;
 }
 
 .logo {

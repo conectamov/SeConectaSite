@@ -88,10 +88,9 @@ const tabs = [
 
 const content = {
    'quem-somos': [
-      'Somos uma iniciativa educacional construída a partir da vivência direta no ambiente escolar, do diálogo constante com estudantes e educadores e da observação dos desafios reais enfrentados ao longo da trajetória acadêmica.',
-      'Nascemos do propósito de fortalecer o interesse pelos estudos, estimular a autonomia intelectual e ampliar horizontes para estudantes que, muitas vezes, não encontram apoio suficiente em seus contextos sociais e educacionais.',
-      'Acreditamos que muitos estudantes possuem alto potencial acadêmico e humano, mas carecem de incentivo contínuo, orientação estruturada e acesso a oportunidades que transformem esse potencial em resultados concretos.',
-      'Atuamos para reduzir distâncias entre estudantes e oportunidades, construindo redes de apoio que valorizam o conhecimento, a troca de experiências e o crescimento coletivo.',
+      'O seConecta é uma iniciativa educational com o objetivo de tornar oportunidades mais acessíveis usando tecnologia como ferramenta.',
+      'De estudante, para estudante nascemos para transformar como estudantes descobrem referências.',
+      'Queremos criar a maior rede social de estudantes, para estudantes e fornecer infraestrutura para que e '
    ],
 
    missao: [
