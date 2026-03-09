@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#f7f5f0]">
 
-    <!-- ════════ ADMINISTRAÇÃO ════════ -->
+    <!-- -- ADMINISTRAÇÃO ---- -->
     <section class="pt-16 pb-12 px-6 sm:px-10 md:px-16 lg:px-24" aria-label="Administração">
       <div class="max-w-5xl mx-auto">
 
@@ -37,7 +37,7 @@
       <div class="max-w-5xl mx-auto h-px bg-gradient-to-r from-transparent via-[#e8e4dc] to-transparent"></div>
     </div>
 
-    <!-- ════════ EMBAIXADORES ════════ -->
+    <!-- -- EMBAIXADORES --- -->
     <section class="pt-12 pb-12 px-6 sm:px-10 md:px-16 lg:px-24" aria-label="Embaixadores">
       <div class="max-w-5xl mx-auto">
 
@@ -111,7 +111,7 @@ const teamAdmin = ref([
     id: 1,
     name: 'Otávio Pinheiro',
     role: 'Diretor Geral',
-    description: 'Cofundador do SeConecta. Acredita que as oportunidades certas transformam trajetórias, e construiu esta plataforma para provar isso. Lidera a visão e estratégia do projeto. Além de ser o responsavel pelo bot do whatsapp ',
+    description: 'Cofundador do SeConecta. Lidera a visão e estratégia do projeto. Além de ser o responsavel por desenvolver o bot SeConecta do whatsapp e recrutar os primeiros beta testers.',
     skills: ['Liderança', 'Produto', 'Estratégia'],
     colorA: '#2464E8',
     colorB: '#2a76ff',
@@ -124,7 +124,7 @@ const teamAdmin = ref([
     id: 2,
     name: 'Gabriel Masterson',
     role: 'Diretor de Tecnologia',
-    description: 'Cofundador do SeConecta. Responsável pela stack tecnologiaca da plataforma SeConecta. Desenvolve o backend em FastAPI e o frontend em Vue 3 com foco em performance, UX e acessibilidade.',
+    description: 'Cofundador do SeConecta. Responsável pela stack tecnologiaca da plataforma SeConecta. Desenvolve o backend em FastAPI e o frontend em Vue 3.',
     skills: ['FastAPI', 'Vue 3', 'PostgreSQL'],
     colorA: '#079272',
     colorB: '#0DA790',

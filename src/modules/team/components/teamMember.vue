@@ -101,11 +101,6 @@ const vAnimate = {
           class="absolute bottom-0 left-0 w-44 h-44 rounded-full opacity-[0.12] pointer-events-none"
           :style="{ background: `radial-gradient(circle, ${member.colorB}, transparent)`, transform: 'translate(-30%, 30%)' }"
         ></div>
-        <!-- Grid sutil -->
-        <div
-          class="absolute inset-0 opacity-[0.04] pointer-events-none"
-          style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 26px 26px;"
-        ></div>
 
         <div class="flex flex-col flex-1 px-5 pt-5 pb-5 relative z-10">
           <!-- Mini header -->
