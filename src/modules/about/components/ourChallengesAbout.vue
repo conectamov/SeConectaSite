@@ -66,18 +66,14 @@
                   </svg>
                 </div>
                 <div>
-                  <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">seConecta</h2>
+                  <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">Feed & Mídia</h2>
                   <div
                     class="h-1 w-20 bg-gradient-to-r from-[#079272] to-[#079272]/50 rounded-full mt-2"
                   ></div>
                 </div>
               </div>
               <p class="text-gray-700 text-lg leading-relaxed">
-                No Brasil, milhões de estudantes desconhecem oportunidades que podem transformar
-                suas vidas. Criamos uma rede de mídia escalável onde nossos embaixadores pesquisam
-                e produzem conteúdo inspirador. Esse conteúdo chega até você por meio de
-                <strong>newsletter, site e nosso chatbot Nexo</strong> — tudo para que encontre
-                referências e oportunidades alinhadas aos seus interesses.
+                Queremos inspirar o maior número de estudantes de qualquer origem. Por isso estamos criando uma rede social que divulga ativamente oportunidades e eventos através de um feed personalizado e redes sociais feito por nossos embaixadores.
               </p>
             </div>
           </div>
@@ -200,12 +196,12 @@
               </div>
               <p class="text-gray-700 text-lg leading-relaxed">
                 Nossos embaixadores são a voz da transformação. Eles criam conteúdo, pesquisam
-                oportunidades e ganham visibilidade em nossas mídias sociais. Aqui, jovens com
-                propósito inspiram outros jovens e desenvolvem liderança na prática.
+                oportunidades e ganham visibilidade em nossas mídias sociais. Buscamos criar portifólio para
+                apoiar iniciativas de nossos embaixadores!
               </p>
               <div class="mt-8">
                 <a
-                  href="#"
+                  href="/embaixadores"
                   class="inline-flex items-center text-[#079272] font-semibold group-hover:underline"
                 >
                   Seja embaixador
@@ -277,7 +273,7 @@
                 <span
                   class="inline-flex items-center text-gray-500 font-medium cursor-not-allowed"
                 >
-                  Inscreva-se para novidades
+                  Em breve!
                 </span>
               </div>
             </div>
@@ -345,12 +341,12 @@
           ></div>
           <a
             class="relative w-full px-8 py-6 rounded-2xl text-white font-semibold text-lg bg-gradient-to-r from-[#079272] to-[#2464E8] hover:from-[#0aab8a] hover:to-[#2a76ff] transition-all duration-300 flex items-center justify-center gap-3 focus:outline-none focus:ring-4 focus:ring-[#2464E8]/30 focus:ring-offset-2 transform hover:-translate-y-1 active:scale-98 shadow-xl hover:shadow-2xl"
-            href="https://chat.whatsapp.com/HisXkEFGq4v5jEBn8hTM3o"
+            href="https://wa.me/558599783928?text=Olá!%20Quero%20participar%20do%20beta%20do%20Conecta"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Junte-se à nossa plataforma"
           >
-            <span class="relative z-10">Faça parte desta rede transformadora</span>
+            <span class="relative z-10">Teste o Nexo no WhatsApp!</span>
             <svg
               class="w-5 h-5 relative z-10 transform group-hover:translate-x-2 transition-transform duration-300"
               fill="none"
@@ -367,7 +363,7 @@
           </a>
         </div>
         <p class="text-center text-gray-500 mt-6">
-          Junte-se a jovens e organizações que querem transformar realidades
+          Conecte-se a jovens e organizações que querem transformar realidades
         </p>
       </div>
     </div>
