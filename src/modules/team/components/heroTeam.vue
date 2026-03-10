@@ -24,10 +24,11 @@
           data-aos="fade-up"
           data-aos-delay="80"
         >
-          Pessoas que<br>
+          Conheça quem faz a<br>
           <em class="not-italic bg-gradient-to-r from-[#079272] to-[#2464E8] bg-clip-text text-transparent">
-            constroem juntas.
+            diferença!
           </em>
+          
         </h1>
 
         <!-- Subtítulo -->
@@ -36,7 +37,7 @@
           data-aos="fade-up"
           data-aos-delay="150"
         >
-          Uma equipe de jovens cuja trajetória foi transformada ao encontrar as oportunidades certas — trabalhando para levar o mesmo a estudantes em todo o Brasil.
+        Nascemos do sonho de usar tecnologia para causar impacto na vida de estudantes. Nossa equipe é formada por voluntários que acreditam no poder da ação.
         </p>
 
         <!-- Stats -->
