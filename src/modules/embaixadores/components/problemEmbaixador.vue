@@ -95,7 +95,7 @@ const problems = ref([
                 color: '#FF6B35',
                 title: 'Falta de Reconhecimento',
                 description:
-                        'Projetos incríveis passam despercebidos sem visibilidade ou validação, desmotivando os estudantes a continuarem.',
+                        'Não tem portfólio claro do seu impacto nem suporte para conduzir suas iniciativas.',
                 impact: '78%',
         },
         {
@@ -103,7 +103,7 @@ const problems = ref([
                 color: '#079272',
                 title: 'Sem Orientação',
                 description:
-                        'Iniciativas se perdem sem mentoria especializada e direção clara sobre os próximos passos a seguir.',
+                        'Apesar de vários estudantes terem ideias promissoras, a maioria não possui orientação e mentoria para conduzir suas iniciativas.',
                 impact: '65%',
         },
         {
@@ -111,7 +111,7 @@ const problems = ref([
                 color: '#2464E8',
                 title: 'Nenhuma Estrutura',
                 description:
-                        'Ideias promissoras não evoluem por falta de recursos, ferramentas e um ecossistema de apoio.',
+                        'Algumas ideias não evoluem por falta de infraestrutura. Oferecemos ferramentas de IA, como o Nexo chatbot, e suporte para criação de clubes em escolas.',
                 impact: '82%',
         },
 ])

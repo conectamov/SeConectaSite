@@ -67,7 +67,7 @@
                 </div>
         </section>
 
-        <section
+        <!--<section
                 class="relative min-h-[100h] flex items-center justify-center px-4 md:px-8 lg:px-20 overflow-hidden mb-[20vh]"
         >
                 <div class="relative w-full max-w-5xl mx-auto text-center items-center justify-center ">
@@ -166,7 +166,7 @@
                                 </div>
                         </div>
                 </div>
-        </section>
+        </section> -->
 </template>
 
 <script setup>

@@ -3,10 +3,12 @@ import Hero2Embaixador from '../components/hero2Embaixador.vue'
 import heroEmbaixador from '../components/heroEmbaixador.vue'
 import ProblemEmbaixador from '../components/problemEmbaixador.vue'
 import praVoceEmbaixador from '../components/praVoceEmbaixador.vue'
+import closedSubscriptionsCTA from '../components/closedSubscriptionsCTA.vue'
 </script>
 <template>
         <heroEmbaixador />
         <ProblemEmbaixador />
-        <Hero2Embaixador />
+        <!-- <Hero2Embaixador /> -->
         <praVoceEmbaixador />
+        <closedSubscriptionsCTA />
 </template>
