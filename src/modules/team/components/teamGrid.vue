@@ -111,7 +111,7 @@ const teamAdmin = ref([
     id: 1,
     name: 'Otávio Pinheiro',
     role: 'Diretor Geral',
-    description: 'Cofundador do SeConecta. Lidera a visão e estratégia do projeto. Além de ser o responsavel por desenvolver o bot SeConecta do whatsapp e recrutar os primeiros beta testers.',
+    description: 'Eu sou Otávio! Gosto de programação, escrita e comunicação. Comecei minha jornada de estudos no sétimo ano e descobri olimpíadas científicas através de um vídeo no YouTube. Desde então, oportunidades transformadoras têm mudado minha vida. Agora carrego a missão de usar minhas paixões para transformar a forma com que estudantes podem impactar outros estudantes usando tecnologia!',
     skills: ['Liderança', 'Produto', 'Estratégia'],
     colorA: '#2464E8',
     colorB: '#2a76ff',
