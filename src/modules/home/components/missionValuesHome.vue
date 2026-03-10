@@ -90,7 +90,7 @@ const content = {
    'quem-somos': [
       'O seConecta é uma iniciativa educational com o objetivo de tornar oportunidades mais acessíveis usando tecnologia como ferramenta.',
       'De estudante, para estudante nascemos para transformar como estudantes descobrem referências.',
-      'Queremos criar a maior rede social de estudantes, para estudantes e fornecer infraestrutura para que e '
+      'Queremos criar a maior rede social de estudantes, para estudantes e fornecer infraestrutura para que e apoiar iniciativas de estudantes que querem causar impacto. '
    ],
 
    missao: [
