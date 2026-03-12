@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, watch } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAxios } from '@/composables/useAxios'
 import { useAuth } from '@/composables/useAuth'
@@ -303,6 +303,13 @@ function timeAgo(dateStr) {
   if (days  < 30) return `há ${days}d`
   return formatDate(dateStr)
 }
+
+const { isAuthenticated } = useAuth()
+
+// Redireciona se não estiver logado
+onMounted(() => {
+  if (!isAuthenticated.value) router.replace({ name: 'login' })
+})
 </script>
 
 <template>
