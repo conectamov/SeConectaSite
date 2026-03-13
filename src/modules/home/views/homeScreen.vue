@@ -5,7 +5,9 @@ import Oportunidades from '../components/oportunidadesHome.vue'
 </script>
 
 <template>
-        <Hero />
-        <MissionValues />
-        <Oportunidades />
+  <main>
+    <Hero />
+    <MissionValues />
+    <Oportunidades />
+  </main>
 </template>
