@@ -17,7 +17,7 @@ export default defineConfig({
     port: 8081,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'https://api.seconecta.org/',
         changeOrigin: true,
         secure: false,
       }

@@ -217,7 +217,7 @@ function switchTab(tab) {
           <p class="text-sm font-light text-[#aaa]">
             {{ activeTab === 'login'
               ? 'Entre com seu e-mail e senha para continuar.'
-              : 'Junte-se a mais de 12 mil leitores do Conecta.' }}
+              : 'Junte-se a nossa comunidade SeConecta.' }}
           </p>
         </div>
 
