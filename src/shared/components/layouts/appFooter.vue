@@ -9,11 +9,7 @@
         Uma rede de crescimento feita por estudantes, para estudantes. Juntos, criamos pontes entre
         potencial e oportunidade.
       </p>
-      <div class="socialmedia-icons">
-        <i class="fa-brands fa-instagram fa-xl"></i>
-        <i class="fa-brands fa-linkedin fa-xl"></i>
-        <i class="fa-brands fa-twitter fa-xl"></i>
-      </div>
+
     </div>
   </footer>
   <p class="copyright"> seConecta © 2026 - Todos os direitos reservados.</p>
