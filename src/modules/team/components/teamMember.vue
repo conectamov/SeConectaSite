@@ -7,6 +7,12 @@ const props = defineProps({
 
 const flipped = ref(false)
 
+const toggleFlip = () => {
+  if (window.innerWidth <= 1024) {
+    flipped.value = !flipped.value
+  }
+}
+
 const getInitials = (name) =>
   name.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2)
 
@@ -30,40 +36,37 @@ const vAnimate = {
     :class="{ 'is-flipped': flipped }"
     role="button"
     :aria-label="`Ver mais sobre ${member.name}`"
+    @click="toggleFlip"
+    @keydown.space.prevent="toggleFlip"
+    @keydown.enter.prevent="toggleFlip"
+    tabindex="0"
   >
     <div class="card-inner">
 
       <div class="card-face card-front">
-        <!-- Barra de cor no topo -->
         <div
           class="h-1 w-full flex-shrink-0"
           :style="{ background: `linear-gradient(90deg, ${member.colorA}, ${member.colorB})` }"
         ></div>
 
-        <!-- Orb decorativo -->
         <div
           class="absolute top-0 right-0 w-32 h-32 rounded-full opacity-[0.07] pointer-events-none"
           :style="{ background: `radial-gradient(circle, ${member.colorA}, transparent)`, transform: 'translate(30%, -30%)' }"
         ></div>
 
         <div class="flex flex-col items-center flex-1 px-6 pt-6 pb-5 relative">
-          <!-- Avatar -->
           <div
             class="w-[128px] h-[128px] rounded-2xl flex items-center justify-center text-white text-2xl font-bold mb-8 shadow-md flex-shrink-0"
             :style="{ background: `linear-gradient(135deg, ${member.colorA}, ${member.colorB})` }"
           >
-
-            <img v-if="member.image" :src="member.image">
+            <img v-if="member.image" :src="member.image" class="w-full h-full object-cover rounded-2xl">
             <span v-else>{{ getInitials(member.name) }}</span>
           </div>
 
-
-          <!-- Nome -->
           <h3 class="text-[0.97rem] font-bold text-[#111] text-center tracking-[-0.02em] leading-snug mb-2">
             {{ member.name }}
           </h3>
 
-          <!-- Role badge -->
           <span
             class="inline-flex items-center gap-1.5 text-[0.68rem] font-semibold px-3 py-1 rounded-full mb-4"
             :style="{ background: member.colorA + '18', border: `1px solid ${member.colorA}38`, color: member.colorA }"
@@ -72,7 +75,6 @@ const vAnimate = {
             {{ member.role }}
           </span>
 
-          <!-- Skills preview -->
           <div v-if="member.skills?.length" class="flex flex-wrap gap-1.5 justify-center">
             <span
               v-for="s in member.skills.slice(0, 3)" :key="s"
@@ -80,7 +82,6 @@ const vAnimate = {
             >{{ s }}</span>
           </div>
 
-          <!-- Hint de interação -->
           <p class="mt-auto pt-5 text-[0.62rem] text-[#ccc] flex items-center gap-1 select-none">
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10l5 5 5-5"/></svg>
             Clique para conhecer
@@ -88,23 +89,19 @@ const vAnimate = {
         </div>
       </div>
 
-      <!-- ═══════════════ VERSO ════════════════ -->
       <div class="card-face card-back" style="background: #0c1b32">
-        <!-- Barra de cor no topo -->
         <div
           class="h-1 w-full flex-shrink-0"
           :style="{ background: `linear-gradient(90deg, ${member.colorA}, ${member.colorB})` }"
         ></div>
 
-        <!-- Orb de fundo -->
         <div
           class="absolute bottom-0 left-0 w-44 h-44 rounded-full opacity-[0.12] pointer-events-none"
           :style="{ background: `radial-gradient(circle, ${member.colorB}, transparent)`, transform: 'translate(-30%, 30%)' }"
         ></div>
 
-        <div class="flex flex-col flex-1 px-5 pt-5 pb-5 relative z-10">
-          <!-- Mini header -->
-          <div class="flex items-center gap-2.5 mb-4">
+        <div class="flex flex-col flex-1 px-5 pt-5 pb-5 relative z-10 h-full">
+          <div class="flex items-center gap-2.5 mb-4 flex-shrink-0">
             <div
               class="w-8 h-8 rounded-xl flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
               :style="{ background: `linear-gradient(135deg, ${member.colorA}, ${member.colorB})` }"
@@ -115,13 +112,13 @@ const vAnimate = {
             </div>
           </div>
 
-          <!-- Descrição -->
-          <p class="text-[0.78rem] font-light text-white/60 leading-relaxed flex-1 line-clamp-5">
-            {{ member.description || 'Descrição em breve.' }}
-          </p>
+          <div class="flex-1 overflow-y-auto min-h-0 pr-1 custom-scrollbar">
+            <p class="text-[0.78rem] font-light text-white/80 leading-relaxed whitespace-normal">
+              {{ member.description || 'Descrição em breve.' }}
+            </p>
+          </div>
 
-          <!-- Skills (verso) -->
-          <div v-if="member.skills?.length" class="flex flex-wrap gap-1.5 mt-4">
+          <div v-if="member.skills?.length" class="flex flex-wrap gap-1.5 mt-4 flex-shrink-0">
             <span
               v-for="s in member.skills" :key="s"
               class="text-[0.6rem] font-semibold px-2 py-0.5 rounded-full"
@@ -129,7 +126,7 @@ const vAnimate = {
             >{{ s }}</span>
           </div>
 
-          <p class="mt-3 text-[0.6rem] text-white/20 flex items-center gap-1 select-none">
+          <p class="mt-3 text-[0.6rem] text-white/20 flex items-center gap-1 select-none flex-shrink-0">
             <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 15l5-5 5 5"/></svg>
             Clique para voltar
           </p>
@@ -147,6 +144,13 @@ const vAnimate = {
   cursor: pointer;
   opacity: 0;
   transform: translateY(22px);
+  outline: none;
+}
+
+.card-scene:focus-visible {
+  outline: 2px solid #079272;
+  outline-offset: 2px;
+  border-radius: 1rem;
 }
 
 .card-scene.card-visible {
@@ -165,16 +169,17 @@ const vAnimate = {
   transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (min-width: 1025px) {
   .card-scene:hover .card-inner {
     transform: rotateY(180deg);
   }
 }
 
-.card-scene.is-flipped .card-inner {
-  transform: rotateY(180deg);
+@media (max-width: 1024px) {
+  .card-scene.is-flipped .card-inner {
+    transform: rotateY(180deg);
+  }
 }
-
 
 .card-face {
   position: absolute;
@@ -186,10 +191,30 @@ const vAnimate = {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background: white;
 }
 
 .card-back {
   transform: rotateY(180deg);
   border-color: rgba(255, 255, 255, 0.07);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
 }
 </style>
