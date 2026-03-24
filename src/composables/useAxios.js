@@ -1,16 +1,17 @@
-
 import axios from 'axios'
-import { useAuth, BASE_URL } from './useAuth'
+// Import the "raw" functions and refs directly from the file, 
+// not the useAuth hook itself.
+import { getAccessToken, logout, BASE_URL } from './useAuth'
 
 const axiosInstance = axios.create({
-  baseURL: BASE_URL, // '/api/v1'
+  baseURL: BASE_URL, // Now '/api/v1/'
   timeout: 10000,
   headers: { 'Content-Type': 'application/json' },
 })
 
 axiosInstance.interceptors.request.use(
   (config) => {
-    const { getAccessToken } = useAuth()
+    // Call the exported function directly
     const token = getAccessToken()
     if (token) {
       config.headers.Authorization = `Bearer ${token}`
@@ -24,8 +25,10 @@ axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      const { logout } = useAuth()
+      // Call logout directly
       logout()
+      
+      // Use leading slash for URL checking/redirecting
       if (!window.location.pathname.startsWith('/login')) {
         window.location.href = '/login'
       }
@@ -36,14 +39,17 @@ axiosInstance.interceptors.response.use(
 
 export function useAxios() {
   const request = async (method, url, data = null, config = {}) => {
+    // Clean the URL: if it starts with '/', remove it to avoid // in path
+    const cleanUrl = url.startsWith('/') ? url.substring(1) : url;
+    
     try {
       if (method === 'get' || method === 'delete') {
-        return await axiosInstance[method](url, config)
+        return await axiosInstance[method](cleanUrl, config)
       } else {
-        return await axiosInstance[method](url, data, config)
+        return await axiosInstance[method](cleanUrl, data, config)
       }
     } catch (error) {
-      console.error(`[useAxios] ${method.toUpperCase()} ${url}:`, error.message)
+      console.error(`[useAxios] ${method.toUpperCase()} ${cleanUrl}:`, error.message)
       throw error
     }
   }

@@ -1,7 +1,7 @@
 import { ref, computed } from 'vue'
 import axios from 'axios'
 
-export const BASE_URL = 'https://api.seconecta.org/api/v1'
+export const BASE_URL = '/api/v1/'
 const TOKEN_KEY = 'conecta_token'
 const TOKEN_EXPIRY_KEY = 'conecta_token_expiry'
 const USER_KEY = 'conecta_user'
@@ -61,7 +61,7 @@ export function useAuth() {
     form.append('username', email)
     form.append('password', password)
 
-    const res = await authAxios.post('/login/access-token', form, {
+    const res = await authAxios.post('login/access-token', form, {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     })
 
@@ -76,13 +76,13 @@ export function useAuth() {
     const payload = { email, username, password }
     if (full_name?.trim()) payload.full_name = full_name.trim()
 
-    const res = await authAxios.post('/users/signup', payload)
+    const res = await authAxios.post('users/signup', payload)
     return res.data // UserPublic
   }
 
   async function fetchMe() {
     if (!accessToken.value) return null
-    const res = await authAxios.get('/users/me', {
+    const res = await authAxios.get('users/me', {
       headers: { Authorization: `Bearer ${accessToken.value}` },
     })
     currentUser.value = res.data
